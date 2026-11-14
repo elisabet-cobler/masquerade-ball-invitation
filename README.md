@@ -16,7 +16,6 @@ Puedes ver la página funcionando aquí: `https://elisabet-cobler.github.io/masq
 
 * **HTML5**
 * **CSS3**
-* **JavaScript**
 
 ## Cómo ejecutarlo en local
 
