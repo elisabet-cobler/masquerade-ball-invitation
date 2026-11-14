@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre | The Alchemist's Masquerade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Formalitza la teva invitació</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inici · </a>
+        <a href="registre.html">Registre · </a>
+        <a href="actividades.html">Activitats · </a>
+        <a href="informacio.html">Més informació</a>
+    </nav>
+
+    <main>
+        <form class="formulario">
+            <div class="camp">
+                <label for="nom"><strong>Nom d'usuari:</strong></label>
+                <input type="text" id="nom" name="nom">
+            </div>
+
+            <div class="camp">
+                <label for="contrasenya"><strong>Contrasenya:</strong></label>
+                <input type="password" id="contrasenya" name="contrasenya">
+            </div>
+
+            <!-- Grupo de Radio Buttons -->
+            <div class="camp">
+                <p class="etiqueta-grupo">Quin tipus de convidat ets?</p>
+                <div class="grupo-opciones">
+                    <div class="opcion">
+                        <input type="radio" id="alquimista" name="tipus_convidat" value="alquimista">
+                        <label for="alquimista">Alquimista</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="aprenent" name="tipus_convidat" value="aprenent">
+                        <label for="aprenent">Aprenent</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="convidat" name="tipus_convidat" value="convidat">
+                        <label for="convidat">Convidat</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo de Checkboxes -->
+            <div class="camp">
+                <p class="etiqueta-grupo">Quin tipus de màgia tens?</p>
+                <div class="grupo-opciones grid-magia">
+                    <div class="opcion">
+                        <input type="checkbox" id="alquimia" name="tipus_magia" value="alquimia">
+                        <label for="alquimia">Alquímia</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="llegir_ments" name="tipus_magia" value="llegir_ments">
+                        <label for="llegir_ments">Llegir ments</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="pocions" name="tipus_magia" value="pocions">
+                        <label for="pocions">Pocions</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="no_ho_se" name="tipus_magia" value="no_ho_se">
+                        <label for="no_ho_se">Encara no ho sé</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="altres" name="tipus_magia" value="altres">
+                        <label for="altres">Altres</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo para adjuntar ficheros -->
+            <div class="camp">
+                <label for="carnet">Adjunta el justificant de registre (invitació segellada):</label>
+                <input type="file" id="carnet" name="carnet">
+            </div>
+
+            <!-- Campo oculto -->
+            <input type="hidden" name="id_esdeveniment" value="AM2026">
+        
+            <!-- Botones -->
+            <div class="botones-formulario">
+                <input type="submit" value="Enviar registre" class="btn btn-submit">
+                <input type="reset" value="Esborrar formulari" class="btn btn-reset">
+                <a href="informacio.html" class="btn">Més informació</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>2026 The Alchemist's Masquerade</p>
+        <p>Una nit de màgia, misteri i alquímia.</p>
+    </footer>
+</body>
+</html>

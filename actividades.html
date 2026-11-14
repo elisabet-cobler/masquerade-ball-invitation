@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció | The Alchemist's Masquerade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Inscripció a les activitats</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="registre.html">Registre</a>
+        <a href="actividades.html">Activitats</a>
+        <a href="informacio.html">Més informació</a>
+    </nav>
+
+    <main>
+        <form>
+
+            <!-- A. Datos participante -->
+            <fieldset class="grupo-datos">
+                <legend>Dades del participant</legend>
+
+                <div class="grid-campos">
+                    <!-- Nom -->
+                    <div class="campo-grid">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required autofocus placeholder="Escriu el teu nom">
+                    </div>
+
+                    <!-- Cognoms -->
+                    <div class="campo-grid">
+                        <label for="cognoms">Cognoms:</label>
+                        <input type="text" id="cognoms" name="cognoms" required placeholder="Escriu els teus cognoms">
+                    </div>
+
+                    <!-- NIF -->
+                    <div class="campo-grid">
+                        <label for="nif">NIF:</label>
+                        <input type="text" id="nif" name="nif" required placeholder="12345678A" pattern="[0-9]{8}[A-Za-z]">
+                    </div>
+
+                    <!-- Data de naixement -->
+                    <div class="campo-grid">
+                        <label for="data">Data de naixement:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <!-- Sexe (Ocupa toda la fila de ancho) -->
+                    <div class="campo-grid fila-completa">
+                        <p style="margin: 0; font-weight: 500;">Sexe:</p>
+                        <div class="opciones-sexo">
+                            <label class="radio-item"><input type="radio" id="dona" name="sexe" value="dona"> Dona</label>
+                            <label class="radio-item"><input type="radio" id="home" name="sexe" value="home"> Home</label>
+                            <label class="radio-item"><input type="radio" id="altre" name="sexe" value="altre"> Altres / Prefereixo no indicar-ho</label>
+                        </div>
+                    </div>
+
+                    <!-- Adreça -->
+                    <div class="campo-grid">
+                        <label for="adreca">Adreça:</label>
+                        <input type="text" id="adreca" name="adreca" placeholder="Escriu la teva adreça">
+                    </div>
+
+                    <!-- Telèfon -->
+                    <div class="campo-grid">
+                        <label for="telefon">Telèfon:</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="123456789">
+                    </div>
+
+                    <!-- Correu electrònic -->
+                    <div class="campo-grid">
+                        <label for="email">Correu electrònic:</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+                    </div>
+
+                    <!-- Pàgina web -->
+                    <div class="campo-grid">
+                        <label for="web">Pàgina web:</label>
+                        <input type="url" id="web" name="web" placeholder="https://www.exemple.com">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- B. Programa i inscripciones -->
+            <fieldset class="grupo-datos">
+                <legend>Programa i inscripcions</legend>
+
+                <div class="bloque-programa">
+                    <h1 class="dia-titulo">Dia 1 - El despertar de l'alquímia</h1>
+                    <div class="lista-checkboxes">
+                        <label class="check-item">
+                            <input type="checkbox" id="alquimia" name="activitats[]" value="alquimia"> Introducció a l'alquímia
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="pocions" name="activitats[]" value="pocions"> Elaboració de pocions
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bloque-programa">
+                    <h1 class="dia-titulo">Dia 2 - Els secrets de la màgia</h1>
+                    <div class="lista-checkboxes">
+                        <label class="check-item">
+                            <input type="checkbox" id="simbols" name="activitats[]" value="simbols"> Secrets dels símbols màgics
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="runes" name="activitats[]" value="runes"> Taller de lectura de runes
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bloque-programa">
+                    <h1 class="dia-titulo">Dia 3 - La culminació de l'encanteri</h1>
+                    <div class="lista-checkboxes">
+                        <label class="check-item">
+                            <input type="checkbox" id="amulets" name="activitats[]" value="amulets"> Creació d'amulets
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="ball" name="activitats[]" value="ball"> Ball de màscares
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- Botones -->
+            <div class="botones-formulario">
+                <input type="submit" value="Enviar registre" class="btn btn-submit" >
+                <input type="reset" value="Esborrar formulari" class="btn btn-reset">
+                <a href="informacio.html" class="btn">Més informació</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>2026 The Alchemist's Masquerade</p>
+        <p>Una nit de màgia, misteri i alquímia.</p>
+    </footer>
+
+</body>
+</html>
